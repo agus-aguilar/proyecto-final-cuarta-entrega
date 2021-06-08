@@ -1,0 +1,199 @@
+/*cambios generales*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*ESTRUCTURAS*/
+header{
+    color:rgb(255, 196, 0);
+    text-align: right;
+    background: rgba(255, 161, 1, 1.0);
+    background: -webkit-linear-gradient(left, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    background: -moz-linear-gradient(left, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    background: linear-gradient(to right, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    height: 30vh;
+    
+}
+
+footer{
+    background: rgba(255, 161, 1, 1.0);
+    background: -webkit-linear-gradient(right, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    background: -moz-linear-gradient(right, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    background: linear-gradient(to left, rgba(255, 161, 1, 1.0), rgba(251, 1, 1, 1.0));
+    height: 10vh;
+}
+
+body{
+    background: rgb(148,7,7);
+    background: linear-gradient(90deg, rgba(148,7,7,1) 7%, rgba(35,7,148,1) 25%, rgba(59,7,148,1) 45%, rgba(82,7,148,1) 59%, rgba(45,7,148,1) 85%, rgba(255,0,0,1) 100%);
+    font-family: 'Mukta', sans-serif;
+}
+.listaMarcado{
+    list-style-position:inside
+}
+.padre-flex{
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+   justify-content: center;
+}
+.sub-padre-flex{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+
+}
+.menu{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    list-style-type: none;
+    border-radius: 3px;
+    border: solid 1px black;
+    list-style: none;
+}
+.boton{
+    background-color: rgb(229, 255, 0);
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    list-style-type: none;
+    border-radius: 3px;
+    border: solid 1px black;
+    list-style: none;
+}
+
+.menuFondoRojo{
+    background-color: red;
+}
+
+.img{
+    border: solid 2px black;
+    padding: 3px 2px;
+}
+.contenedor-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+}
+#dest{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-image: url(https://academia.nubimetrics.com/hubfs/mundo%20game.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#desc{
+            background-image: url(https://portinos-cloudfront.portinos.com/wp-content/uploads/2017/08/gamers-555x313.jpg);
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            font-size: 30px;
+            text-transform: capitalize;
+            color: yellow;
+            margin: 10px 5px 12px;
+}
+.cont{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center
+}
+
+/*FUENTES*/
+.textoGrande{
+            font-size: 50px;
+}
+.centrarTexto{
+    text-align: center;
+}
+.textoMediano{
+            font-size: 30px;
+}
+.textoChico{
+        font-size: 13px;
+}
+
+.ningunDecorado{
+    text-decoration: none;
+}
+.aLaDerecha{
+    text-align: right;
+}
+
+.titulo{
+    font-size: 70px;
+}
+.cursiva{
+     font-style: italic;
+}
+.normal{
+        font-style: normal;
+}
+
+
+/*ANIMACIONES*/
+.animacion{
+    color: yellow;
+    animation-name: efecto;/* nombre del keyframe*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+/*linea de tiempo*/
+@keyframes efecto{
+    0%{
+        background-color: red;
+        color: yellow;
+    }
+    25%{
+        background-color: yellow;
+        color: red;
+    }
+    75%{
+        background-color: red;
+        color: yellow;
+    }
+    100%{
+        background-color: yellow;
+        color: red;
+    }
+}
+
+
+/*cambios a productos.html*/
+#unop{
+        background-color: rgb(248, 37, 37);
+}
+#unop h2{
+        color: orange;
+}
+#unop table{
+            color:yellow;
+            background-color: rgb(231, 65, 23);
+}
+
+
+/*cambios a contacto.html*/
+#unoc{
+    /*background-color: rgb(37, 188, 214);*/
+    background: #2BBCB5;
+background: -webkit-radial-gradient(bottom, #2BBCB5, #E20E49);
+background: -moz-radial-gradient(bottom, #2BBCB5, #E20E49);
+background: radial-gradient(to top, #2BBCB5, #E20E49);
+}
+#dosc{
+    /*background-color: rgb(25, 172, 110);*/
+    background-image: url(https://hardzone.es/app/uploads-hardzone.es/2020/03/Teclado-gaming-800x419.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#dosc p{
+        font-size: 30px;
+}
