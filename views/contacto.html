@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacion de Juegos - Contacto</title>
+    <!--Enlace externo al archivo proyecto-css-->
+    <link rel="stylesheet" href="../assets/css/proyecto-css.css">
+
+    <!--Enlace para Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <meta name="description" content="En esta pagina vas a poder llenar un formulario de consultas si tens alguna duda">
+        <h1 class="titulo">Estacion de juegos</h1>
+        <h2 class="textoGrande">Contacto</h2>
+    </header>
+
+    <section>
+        <nav class="menuFondoRojo">
+            <ul class="padre-flex">
+                <li class="menu"><a href="../index.html" class="ningunDecorado">inicio</a></li>
+                <li class="menu"><a href="../views/productos.html" class="ningunDecorado">productos</a></li>                
+                <li class="menu"><a href="../views/contacto.html" class="ningunDecorado">contacto</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    
+
+
+    <section id="dosc">
+        <article class="textoMediano amarillo centrarTexto">
+            Aqui puede llenar sus datos para contactarnos. Recomendarnos algo, preguntar por preguntos o por posibilidad de trabajo. En la brevedad le contestaremos
+        </article>
+    </section>
+            <!--ejemplo de camelCase-->
+    <section id="unoc" class="centrarTexto">
+        <form action=""><!--formulario-->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label><!--nombre de la caja-->
+                <input type="text" name="nombre" placeholder="Nombre"><!--caja de datos-->
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email">
+                <br>
+
+            </fieldset>
+            <br><!--salto de linea-->
+            <fieldset>
+                <legends>Comentarios</legends>
+                <br>
+                    <select name="producto" id=""><!--menu desplegable-->
+                        <option value="C">Consolas</option>
+                        <option value="J">Juegos</option>
+                        <option value="O">Otros</option>
+                    </select>
+                    <br>
+
+                    <textarea name="caja de comentarios" id="" cols="30" rows="10"></textarea><!--caja de texto-->
+
+                    <div>Suscribirce al newsletter<!--checkbox-->
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+            </fieldset>
+            <!--botones-->
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Limpiar Formulario">
+            <!--botones-->
+
+
+        </form><!--formulario-->
+    </section>
+
+    <footer>
+        <a href="../index-proyecto-aguilar.html" class="ningunDecorado">inicio</a>
+        <a href="../views/contacto.html" class="ningunDecorado">contacto</a>
+        <p>copyright - 2021</p>
+    </footer>
+
+</body>
+</html>
